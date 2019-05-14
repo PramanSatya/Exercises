@@ -1,126 +1,98 @@
-
-.body_attributes{
+body {
   font-family: 'Raleway', sans-serif;
 }
 
-
-
 .wrapper {
-  margin: 0 auto;
-  width: 1200px;
+  margin: 20px auto;
+  width: 1100px;
+
 }
 
-
 .left_part {
-	width: 65%;
-    height: 600px;
-    margin-top: 20px;
+	width: 63%;
 	background-color: white;
-    float: left;
-    text-align: center;
+	float: left;
 }
 
 .right_part {
-	width: 35%;
-    height: 600px;
-    margin-top: 20px;
+	width: 37%;
+  height: 573.38px;
 	background-color: white;
-    float: right;
+	float: right;
 }
 
-
-.first_by_four {
-    width: 50%;
-    float: left;
-    margin-top: 7.8px;
-    margin-right: -100px;
-    margin-left: 26px;
-
+.upper_left {
+  text-align: center;
+  width: 50%;
+  float: left;
 }
 
-.first_by_four img {
-    height: 64px;
-    width: 64px;
-    margin-bottom: -3.5px;
-
+.upper_left img {
+	height: 55px;
+	width: 55px;
 }
 
-.second_by_four {
-    width: 50%;
-    float: left;
-    margin-top: 5px;
-    margin-left: 50px;
+.upper_right {
+  text-align: center;
+  width: 50%;
+  float: right;
 }
 
-
-.second_by_four img {
-  
-    height: 65px;
-    width: 90px;
-    margin-bottom: -1px;
-    
+.upper_right img {
+  height: 55px;
+  width: 80px;
 }
 
-.third_by_four {
-    width: 50%;
-    float: left;
-    margin-top: 48px;
-    margin-right: -100px;
-    margin-left: 25px;
+.lower_left {
+  margin-top: 40px;
+  text-align: center;
+  width: 50%;
+  float: left;
 }
 
-.third_by_four img {
-    height: 65px;
-    width: 70px;
-    margin-top: 6px;
-    margin-bottom: -3px;
-
+.lower_left img {
+  height: 55px;
+  width: 60px;
 }
 
-.fourth_by_four {
-    margin-top: 55px;
-    width: 50%;
-    float: left;
-    margin-left: 50px;
+.lower_right {
+  margin-top: 40px;
+  text-align: center;
+  width: 50%;
+  float: left;
 }
 
-.fourth_by_four img {
-    height: 53px;
-    width: 72px;
-    margin-bottom: -4px;
-
+.lower_right img {
+  height: 55px;
+  width: 60px;
 }
-
 
 .right_box {
-    height: 480px;
-    width: 380px;
-    background-color: white;
-    box-shadow: 0 0 20px grey;
-    margin-left: 50px;
-    margin-top: -10px;
+  background-color: white;
+  float: right;
+  width: 350px;
+  height: 460px;
+  box-shadow: 0 0 20px grey;
+  margin-top: 36px;
 }
-
 
 .box_wrapper {
-  margin: 0 auto;
-  width: 290px;
-  margin-top: 18px;
+  margin: 30px auto;
+  width: 280px;
+  height: 400px;
+  background-color: white;
 }
-
 
 .offer {
-    font-size: 19.5px;
-    letter-spacing: 0.35px;
-    font-weight: bold;
-
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: bold;
 }
 
-
 input {
-  width: 295px;
+  width: 280px;
   padding: 15px 25px;
-  margin: 13px 0;
+  margin: 10px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -128,17 +100,17 @@ input {
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: grey;
-  font-size: 16px; /* Firefox */
+  font-size: 14px; /* Firefox */
 }
 
 .vehicle_type button {
   background-color: white;
   color: grey;
   padding: 12px 18px;
-  margin: 20px 0;
+  margin: 7px 1px;
   border: 1px solid #ccc;
   cursor: pointer;
-  width: 92px;
+  width: 87px;
 }
 
 .vehicle_type button:hover {
@@ -149,13 +121,16 @@ input {
 button[type=Final] {
   background-color: #1DACB2;
   color: white;
-  padding: 1px 2px;
-  margin: 3px -2px;
+  padding: 0.1px;
+  margin: 15px auto;
   border: none;
   cursor: pointer;
-  width: 296px;
+  width: 280px;
   border-radius: 5px;
 }
 
-
-
+.call {
+  color: grey;
+  font-size: 14px;
+  margin: 15px auto;
+}
