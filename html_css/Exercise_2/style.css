@@ -14,6 +14,14 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
+.left_heading {
+  font-size: 30.7px;
+}
+
 .right_part {
   width: 37%;
   height: 573.38px;
