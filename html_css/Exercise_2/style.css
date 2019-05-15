@@ -5,37 +5,44 @@ body {
 .wrapper {
   margin: 20px auto;
   width: 1100px;
-
 }
 
 .left_part {
-	width: 63%;
-	background-color: white;
-	float: left;
+  width: 63%;
+  background-color: white;
+  float: left;
+  text-align: center;
 }
 
 .right_part {
-	width: 37%;
+  width: 37%;
   height: 573.38px;
-	background-color: white;
-	float: right;
+  background-color: white;
+  float: right;
 }
 
-.upper_left {
+.upper_left , .upper_right {
   text-align: center;
   width: 50%;
   float: left;
 }
 
 .upper_left img {
-	height: 55px;
-	width: 55px;
+  height: 55px;
+  width: 55px;
 }
 
-.upper_right {
-  text-align: center;
-  width: 50%;
-  float: right;
+.heading {
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+}
+
+.paragraph {
+  color: grey;
+  font-size: 16.5px;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
 }
 
 .upper_right img {
@@ -43,26 +50,14 @@ body {
   width: 80px;
 }
 
-.lower_left {
+.lower_left , .lower_right {
   margin-top: 40px;
   text-align: center;
   width: 50%;
   float: left;
 }
 
-.lower_left img {
-  height: 55px;
-  width: 60px;
-}
-
-.lower_right {
-  margin-top: 40px;
-  text-align: center;
-  width: 50%;
-  float: left;
-}
-
-.lower_right img {
+.lower_left img , .lower_right img {
   height: 55px;
   width: 60px;
 }
@@ -98,9 +93,15 @@ input {
   box-sizing: border-box;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
   color: grey;
-  font-size: 14px; /* Firefox */
+  font-size: 14px;
+}
+
+.select_vehicle {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .vehicle_type button {
@@ -118,7 +119,7 @@ input {
   color: white
 }
 
-button[type=Final] {
+button[type=submit] {
   background-color: #1DACB2;
   color: white;
   padding: 0.1px;
@@ -132,5 +133,7 @@ button[type=Final] {
 .call {
   color: grey;
   font-size: 14px;
+  padding-left: 71px;
+  letter-spacing: 0.4px;
   margin: 15px auto;
 }
