@@ -1,0 +1,147 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  margin: 20px auto;
+  width: 1100px;
+}
+
+.left_part {
+  width: 63%;
+  background-color: white;
+  float: left;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left_heading {
+  font-size: 30.7px;
+}
+
+.right_part {
+  width: 37%;
+  height: 573.38px;
+  background-color: white;
+  float: right;
+}
+
+.upper_left , .upper_right {
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.upper_left img {
+  height: 55px;
+  width: 55px;
+}
+
+.heading {
+  font-size: 14px;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+}
+
+.paragraph {
+  color: grey;
+  font-size: 16.5px;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+}
+
+.upper_right img {
+  height: 55px;
+  width: 80px;
+}
+
+.lower_left , .lower_right {
+  margin-top: 40px;
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.lower_left img , .lower_right img {
+  height: 55px;
+  width: 60px;
+}
+
+.right_box {
+  background-color: white;
+  float: right;
+  width: 350px;
+  height: 460px;
+  box-shadow: 0 0 20px grey;
+  margin-top: 36px;
+}
+
+.box_wrapper {
+  margin: 30px auto;
+  width: 280px;
+  height: 400px;
+  background-color: white;
+}
+
+.offer {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-weight: bold;
+}
+
+input {
+  width: 280px;
+  padding: 15px 25px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: grey;
+  font-size: 14px;
+}
+
+.select_vehicle {
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.vehicle_type button {
+  background-color: white;
+  color: grey;
+  padding: 12px 18px;
+  margin: 7px 1px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  width: 87px;
+}
+
+.vehicle_type button:hover {
+  background-color: #1DACB2;
+  color: white
+}
+
+button[type=submit] {
+  background-color: #1DACB2;
+  color: white;
+  padding: 0.1px;
+  margin: 15px auto;
+  border: none;
+  cursor: pointer;
+  width: 280px;
+  border-radius: 5px;
+}
+
+.call {
+  color: grey;
+  font-size: 14px;
+  padding-left: 71px;
+  letter-spacing: 0.4px;
+  margin: 15px auto;
+}
