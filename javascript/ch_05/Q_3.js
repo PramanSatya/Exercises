@@ -1,4 +1,3 @@
-"use strict";
 function fun(array, test){
   for(let i of array){
     if(test(i))
@@ -8,16 +7,12 @@ function fun(array, test){
   }
   return true;
 }
-
-console.log(fun([1,3,5], n => n<10));
-
-
+console.log(fun([1,3,5], n => n < 10));
 function every(array, test){
-  if(array.some(n => n>10))
+  if(array.some(n => n > 10))
     return false;
   else
     return true;
 }
-
-console.log(every([1,3,5], n => n<10));
+console.log(every([1,3,5], n => n < 10));
 

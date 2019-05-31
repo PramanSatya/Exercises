@@ -8,7 +8,6 @@ function dominantDirection(text) {
     return "ltr";
   return counted.reduce((a, b) => a.count > b.count ? a : b).name;
 }
-
 function countBy(items, groupName) {
   let counts = [];
   for (let item of items) {
@@ -22,7 +21,6 @@ function countBy(items, groupName) {
   }
   return counts;
 }
-
 function characterScript(code) {
   for (let script of SCRIPTS) {
     if (script.ranges.some(([from, to]) => {
@@ -33,7 +31,5 @@ function characterScript(code) {
   }
   return null;
 }
-
-
 console.log(dominantDirection("Hello!"));
 console.log(dominantDirection("Hey, مساء الخير"));
