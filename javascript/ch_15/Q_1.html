@@ -18,9 +18,14 @@
         event.preventDefault();
       }
     } else if (event.key == "ArrowDown") {
-      setSize(size * 0.9);
+      if(size < 15)
+        setSize(size);
+      else{
+        setSize(size * 0.9);
+      }
       event.preventDefault();
     }
+
   }
   document.body.addEventListener("keydown", handleArrow);
 </script>

@@ -13,7 +13,7 @@ function withBoxUnlocked(body) {
   if(!status){
     return body();
   }
-  box.locked = false;
+  box.unlock();
   try{
     return body();
   }
