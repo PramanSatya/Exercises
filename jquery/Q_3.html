@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 3 - rampup</title>
+  <style type="text/css"></style>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function varify(){
+      var num = $('#number').val()
+      var regEx = /^\d+$/;
+      if(regEx.test(num)){
+        $('#result').val("TRUE")
+        $('#submit').prop('disabled', false)
+      }
+      else{
+        $('#result').val("FALSE")
+        $('#submit').prop('disabled', true)
+        varify();
+      }
+    }
+  </script>
+</head>
+<body>
+  <form>
+    <label for="number">Enter Number:</label>
+    <input type="text" name="numberInput" id="number">
+    <label for="result">Result:</label>
+    <input type="text" name="resultOutput" id="result"><br>
+    <input type="submit" id="submit" onclick='varify();'>
+  </form>
+</body>
+</html>

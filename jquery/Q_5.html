@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 5 - rampup</title>
+  <style type="text/css"></style>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+      var num = 0;
+      $("button").on('click', function() {
+        $(".container").append(`<div class="inner">${num++}</div>`);
+      } );
+      $(document).on('click', '.inner', function() {
+        alert( $(this).html() );
+      } );
+    } );
+  </script>
+</head>
+<body>
+  <div class="container">
+    <button>Add a div</button>
+  </div>
+</body>
+</html>
