@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>Exercise 5 - rampup</title>
+  <style type="text/css">
+    #countryParent, #countryChild {
+      width: 200px;
+      height: 100px;
+    }
+
+  </style>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+    function addOptions(from, to)
+    {
+      while($("#" + from).prop('selectedIndex') != -1)
+      {
+        var val = $("#" + from).val();
+        var optionNumber = $("#" + from).prop('selectedIndex')
+        var Text = $( "#" + from + " option:selected" ).text();
+        $('#' + to).append($('<option>', {
+            value: val,
+            text: Text
+        }));
+        $("#" + from + " option[value=" + val + "]").remove();
+      }
+    }
+  </script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>
+        <select id="countryParent" size="6">
+          <option value='india'>India</option>
+          <option value='pakistan'>Pakistan</option>
+          <option value='bangladesh'>Bangladesh</option>
+          <option value='sriLanka'>Sir Lanka</option>
+          <option value='nepal'>Nepal</option>
+          <option value='burma'>Burma</option>
+        </select>
+      </td>
+      <td>
+        <input type='button' onclick="addOptions('countryParent', 'countryChild');" value='Add' /><br><br>
+        <input type='button' onclick="addOptions('countryChild', 'countryParent');" value='Remove' />
+      </td>
+      <td>
+        <select id="countryChild" size="6">
+        </select>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Exercise 2 - rampup</title>
+  <style type='text/css'>
+    #container
+    {
+      height:100px;
+      width:100%;
+      background-color: black;
+      color: white;
+      overflow:scroll;
+    }
+    #colorSubBox, #moviesSubBox, #drinksSubBox, #bikesSubBox
+    {
+      margin-left:50px;
+      display:none;
+    }
+  </style>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type='text/javascript'>
+    function toggleDisplay(e)
+    {
+      var $objDiv = $('#' + e + 'SubBox');
+      var $objCBox = $('#' + e + 'CBox');
+      if($objCBox.prop('checked') == true){
+        $objDiv.css("display", "block")
+      }
+      else{
+        $objDiv.css("display", "none")
+        $('#' + e + 'SubBox' + ' :checkbox:enabled').prop('checked', false);
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id='container'>
+    <div id='colorContainer'>
+      <input type='checkbox' id='colorCBox' onclick='toggleDisplay("color");'>Color
+      <div id='colorSubBox'>
+        <input type='checkbox'>Red<br>
+        <input type='checkbox'>Yellow<br>
+        <input type='checkbox'>Green<br>
+        <input type='checkbox'>Blue<br>
+      </div>
+    </div>
+    <div id='moviesContainer'>
+      <input type='checkbox' id='moviesCBox' onclick='toggleDisplay("movies");'>Movies
+      <div class='subBox' id='moviesSubBox'>
+        <input type='checkbox'>humshakals<br>
+        <input type='checkbox'>himmatwala<br>
+        <input type='checkbox'>Student of the year 2<br>
+      </div>
+    </div>
+    <div id='drinksContainer'>
+      <input type='checkbox' id='drinksCBox' onclick='toggleDisplay("drinks");'>Drinks
+      <div class='subBox' id='drinksSubBox'>
+        <input type='checkbox'>Coke<br>
+        <input type='checkbox'>Pepsi<br>
+        <input type='checkbox'>Dew<br>
+      </div>
+    </div>
+    <div id='bikesContainer'>
+      <input type='checkbox' id='bikesCBox' onclick='toggleDisplay("bikes");'>Bikes
+      <div class='subBox' id='bikesSubBox'>
+        <input type='checkbox'>HayaBusa<br>
+        <input type='checkbox'>Ducati Panigale<br>
+        <input type='checkbox'>1000rr<br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

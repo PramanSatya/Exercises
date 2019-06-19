@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Rampup Q-6</title>
+  <style type="text/css">
+    div#timer {
+      display: block;
+      font-size: 100px;
+      color: red;
+      float: left;
+    }
+    div#mainForm {
+      display: block;
+      text-align: center;
+      font-size: 30px;
+    }
+  </style>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready( function() {
+      var playingstatus = false;
+      var inputDisabled = false;
+      var remaining;
+      var interval;
+      function Timer() {
+        $('button').text("Pause");
+        playingstatus = true;
+        $('div#timer').text(`${remaining}`);
+        remaining=remaining-1
+        interval = setInterval(function() {
+          if( remaining >= 0) {
+            $('div#timer').text(`${remaining--}`);
+          } else {
+            clearInterval(interval);
+            $('button').text("Play");
+            $('input').prop('disabled', false);
+            inputDisabled = false;
+          }
+        }, 1000);
+      }
+      $('button').on('click', function() {
+        if( inputDisabled ) {
+          if( !playingstatus ) {
+            Timer();
+            playingstatus = true;
+          } else {
+            clearInterval(interval);
+            playingstatus = false;
+            $('button').text("Play");
+          }
+        } else {
+          var inputText = $('input').val();
+          if( isNaN(inputText) ) {
+          } else {
+            remaining = parseInt(inputText, 10);
+            if( remaining > 0) {
+              inputDisabled = true;
+              $('input').prop('disabled', true);
+              Timer();
+            }
+          }
+        }
+      });
+    } );
+  </script>
+</head>
+<body>
+  <div id="timer"></div>
+  <div id="mainForm">
+    <input type="text" name="timeInput"> <button>Play</button>
+  </div>
+</body>
+</html>
