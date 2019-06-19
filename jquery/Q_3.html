@@ -18,7 +18,6 @@
       else{
         $('#result').val("FALSE")
         $('#submit').prop('disabled', true)
-        varify();
       }
     }
   </script>
@@ -27,9 +26,10 @@
   <form>
     <label for="number">Enter Number:</label>
     <input type="text" name="numberInput" id="number">
+    <br><br>
     <label for="result">Result:</label>
-    <input type="text" name="resultOutput" id="result"><br>
-    <input type="submit" id="submit" onclick='varify();'>
+    <input type="text" name="resultOutput" id="result"><br><br>
+    <input type="button" value="submit" onclick='varify();'>
   </form>
 </body>
 </html>

@@ -28,6 +28,8 @@
       function Timer() {
         $('button').text("Pause");
         playingstatus = true;
+        $('div#timer').text(`${remaining}`);
+        remaining=remaining-1
         interval = setInterval(function() {
           if( remaining >= 0) {
             $('div#timer').text(`${remaining--}`);

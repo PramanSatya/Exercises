@@ -5,11 +5,11 @@ class User {
   }
 
   compareAge(user) {
-    let generic = " is older than "
+    let commonString = " is older than "
     if(this.age > user.age)
-      return this.name + generic + user.name;
+      return this.name + commonString + user.name;
     else
-      return user.name + generic + this.name;
+      return user.name + commonString + this.name;
   }
 }
 let user1 = new User("john", 16);

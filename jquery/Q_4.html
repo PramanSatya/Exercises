@@ -24,7 +24,6 @@
             value: val,
             text: Text
         }));
-        document.getElementById(from).remove(optionNumber);
         $("#" + from + " option[value=" + val + "]").remove();
       }
     }
@@ -34,7 +33,7 @@
   <table>
     <tr>
       <td>
-        <select id="countryParent" multiple='multiple'>
+        <select id="countryParent" size="6">
           <option value='india'>India</option>
           <option value='pakistan'>Pakistan</option>
           <option value='bangladesh'>Bangladesh</option>
@@ -48,7 +47,7 @@
         <input type='button' onclick="addOptions('countryChild', 'countryParent');" value='Remove' />
       </td>
       <td>
-        <select id="countryChild" multiple='multiple'>
+        <select id="countryChild" size="6">
         </select>
       </td>
     </tr>
